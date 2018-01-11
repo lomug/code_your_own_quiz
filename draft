@@ -47,11 +47,29 @@ quizes = [quiz_1, quiz_2, quiz_3]
 print " A quiz project - part of my IPND Nanodegree\n \n"
 sleep(0.2)
 
-name = raw_input("What is your name?")
+name = raw_input("What is your name? ")
 sleep(0.2)
 
 print time_of_day(),  name + " welcome to this quiz"
 levels = raw_input ("please choose either  level 1, level 2 or level 3 : ")
+
+def display(levels):
+	if levels == "1":
+		selector=0
+		return quiz_1 
+		
+
+	elif levels == "2":
+		selector=0
+		return quiz_2
+		
+	elif levels == "3":
+		selector=0
+		return quiz_3
+		
+	else:
+		return " im sorry "+ name + " that is not a vlid level please restart and choose either 1, 2 or 3." 
+print display (str(levels))
 
 
 
