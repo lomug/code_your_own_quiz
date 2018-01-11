@@ -1,0 +1,54 @@
+from datetime import datetime
+from time import sleep
+
+d = datetime.utcnow()
+hour= d.hour
+
+
+def time_of_day():
+	hour= d.hour
+	if hour > 18:
+		return "Good evening, "
+	if hour >12:
+		return "Good afternoon, "
+	if hour >0:
+		return "Good morning, "
+	pass
+
+blank = ['___1___','___2___','___3___','___4___','___5___']
+
+quiz_1 ="One fine day queen ___1___ invited the three bears to dinner at her ice castle.\
+\n They had bearly began to eat when ___2___in boots rushed in with ___3___ glass slipper,\
+\n 'hurry, hurry we need to go help put ___4___ dumpty back together, cos all the ___5___'s men cant."
+
+
+
+answer_1 = ["elsa", "puss", "cinderella", "humpty", "kings"]
+
+quiz_2 =" In fine arts; red, yellow and blue are ___1___colours.\
+\n These colours can be combined to form ___2___colours. \
+\nRed + yellow yeilds ___3___blue + yellow yeilds ___4___and blue and red yeilds ___5___"
+
+answer_2 = ["primary", "secondary", "orange", "green", "purple"]
+
+quiz_3 = " In the command line you use the mkdir command to make a new ___1___ and the touch command to make a new ___2___ .\
+\n In python mutation is supported by ___3___but not by ___4___. \
+\n In python the def keyword is required to define a ___5___ (otherwise called a function). "
+
+answer_3 = [ "directory", "file", "arrays", "strings", "procedure"] 
+
+
+solutions = [answer_1, answer_2, answer_3 ]
+
+quizes = [quiz_1, quiz_2, quiz_3]
+
+
+
+print " A quiz project - part of my IPND Nanodegree\n \n"
+sleep(0.2)
+
+name = raw_input("What is your name?")
+sleep(0.2)
+
+print time_of_day(),  name + " welcome to this quiz"
+levels = raw_input ("please choose either  level 1, level 2 or level 3 : ")
