@@ -68,15 +68,4 @@ def level_choice(levels):
 		return level_choice()
 
 
-def number_guesses():
-	guesses = int(raw_input ( "How many guesses would you like? ( please pick an integer value)"))
-	count = 0
- 	while guesses < 1:
- 			print "try again."
-    	number_guesses()
-    	count+= 1
-    	if count == 5:
-			printn 
-  	else:
-    		print "Please read the paragraph below and provide the answers to fill in the numbered blanks.\n You will be given " + str(guesses) + " opportunities to provide the correct answer before it is provided to you by the program."
-    		return guesses
+
