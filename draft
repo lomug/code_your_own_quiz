@@ -85,7 +85,7 @@ def level_choice(levels):
 		return quiz_3, answer_3
 		return level_choice()
 		
-	def number_guesses():
+def number_guesses():
 	guesses = int(raw_input ( "How many guesses would you like? ( please pick an integer value)"))
 	count = 0
  	while guesses < 1:
