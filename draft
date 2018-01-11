@@ -52,3 +52,31 @@ sleep(0.2)
 
 print time_of_day(),  name + " welcome to this quiz"
 levels = raw_input ("please choose either  level 1, level 2 or level 3 : ")
+
+
+
+def level_choice(levels):
+	
+	if levels == "level 1" or  levels == "level1" or levels == "1":
+		return quiz_1 ,answer_1
+
+	elif levels == "level 2" or levels == "level2" or levels == "2":
+		return quiz_2, answer_2
+		
+	elif levels == "level 3" or levels == "level3" or levels == "3":
+		return quiz_3, answer_3
+		return level_choice()
+
+
+def number_guesses():
+	guesses = int(raw_input ( "How many guesses would you like? ( please pick an integer value)"))
+	count = 0
+ 	while guesses < 1:
+ 			print "try again."
+    	number_guesses()
+    	count+= 1
+    	if count == 5:
+			printn 
+  	else:
+    		print "Please read the paragraph below and provide the answers to fill in the numbered blanks.\n You will be given " + str(guesses) + " opportunities to provide the correct answer before it is provided to you by the program."
+    		return guesses
